@@ -1,12 +1,13 @@
 # ED - Easy Deque
-#### Soal terinspirasi dari [STACKEZ](https://www.spoj.com/problems/STACKEZ)
+Soal terinspirasi dari [STACKEZ](https://www.spoj.com/problems/STACKEZ)
+
 Syarat-syarat hampir sama dengan STACKEZ, hanya berbeda di bagian-bagian berikut
 1. Nilai yang disimpan berupa bilangan real, bukan integer
 2. Print kedua nilai yang ada di depan dan belakang
 3. Jika hanya ada satu, maka print satu saja
 
-### `struct` dan fungsi
-* `struct` deque
+## `struct` Dan Fungsi
+### `struct` deque
 ```C
 struct node
 {
@@ -20,7 +21,7 @@ struct deque
     size_t size;
 };
 ```
-* Fungsi `push_front()`
+### Fungsi `push_front()`
 ```C
 void push_front(struct deque *dp, double newval)
 {
@@ -46,7 +47,7 @@ void push_front(struct deque *dp, double newval)
     }
 }
 ```
-* Fungsi `push_back()`
+### Fungsi `push_back()`
 ```C
 void push_back(struct deque *dp, double newval)
 {
@@ -72,7 +73,7 @@ void push_back(struct deque *dp, double newval)
     }
 }
 ```
-* Fungsi `pop_front()`
+### Fungsi `pop_front()`
 ```C
 void pop_front(struct deque *dp)
 {
@@ -89,7 +90,7 @@ void pop_front(struct deque *dp)
     free(tgt);
 }
 ```
-* Fungsi `pop_back()`
+### Fungsi `pop_back()`
 ```C
 void pop_back(struct deque *dp)
 {
