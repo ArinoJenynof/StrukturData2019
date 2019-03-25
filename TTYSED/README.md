@@ -9,8 +9,8 @@
 5. _rm_, hapus data di index _i_.
 6. _stop_, berhentikan program.
 
-### `struct` dan fungsi
-`struct` linked list
+## `struct` Dan Fungsi
+### `struct` linked list
 ```C
 struct node
 {
@@ -24,7 +24,7 @@ struct linkedlist
     size_t linkedlist_size;
 };
 ```
-Fungsi `add_*`
+### Fungsi `add_*`
 ```C
 void add_front(struct linkedlist *lp, char n[])
 {
@@ -101,7 +101,7 @@ void add_at(struct linkedlist *lp, char n[], int idx)
     }
 }
 ```
-Fungsi `del_*`
+### Fungsi `del_*`
 ```C
 void del_front(struct linkedlist *lp)
 {
@@ -158,7 +158,7 @@ void del_at(struct linkedlist *lp, int idx)
     }
 }
 ```
-`mv` dan `cp` _wrapper function_.
+### `mv` dan `cp` _wrapper function_.
 ```C
 void mv(struct linkedlist *lp, int now, int then)
 {
